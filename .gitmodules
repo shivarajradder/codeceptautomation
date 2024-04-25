@@ -1,0 +1,17 @@
+[submodule "src/dd_api_automation"]
+	path = src/dd_api_automation
+	url =https://avinash_zycus:St3z3gCKrdZQcmf9w6HH@bitbucket.org/procurement_zycus/dd_api_automation.git 
+	branch=Saturn_Codecept3
+	
+[submodule "src/COE_AUTOMATION"]
+	path = src/COE_AUTOMATION
+	url = https://avinash_zycus:St3z3gCKrdZQcmf9w6HH@bitbucket.org/procurement_zycus/coe_automation.git
+	branch =release/Maple_node14
+
+[submodule "src/CRMS"]
+	path = src/CRMS
+	url = https://avinash_zycus:St3z3gCKrdZQcmf9w6HH@bitbucket.org/procurement_zycus/crms_cedeceptjs_uiautomation.git
+    branch = release/pluto
+[submodule "src/AppEnablement"]
+	path = src/AppEnablement
+	url = https://Surbhi_Rajput:ATBBRAexjDtcFLzuJ73rqbwF44vx824A275E@bitbucket.org/procurement_zycus/appenablement.git

@@ -1,0 +1,9 @@
+/output/
+/allure-report/
+/node_modules/allure-commandline/
+/node_modules/.bin
+/node_modules/
+settings.json
+/Resources/config.json
+config.json
+dist/

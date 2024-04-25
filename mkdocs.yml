@@ -1,0 +1,7 @@
+site_name: iSupplier UI Automation
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

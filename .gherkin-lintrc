@@ -1,0 +1,5 @@
+{
+  "max-scenarios-per-file": ["on", {"maxScenarios": 10, "countOutlineExamples": true}],
+  "no-background-only-scenario":"on",
+  "use-then":"on"
+}

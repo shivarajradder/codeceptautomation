@@ -1,0 +1,29 @@
+# This is a sample build configuration for Ruby.
+# Check our guides at https://confluence.atlassian.com/x/8r-5Mw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: atlassian/default-image:2
+
+clone:
+  depth: full
+
+pipelines:
+  default:
+      - step:
+          name: New Xray Bitbucket Pipeline
+          condition:
+           changesets:
+             includePaths:
+                    # only xml files directly under resources directory
+                    - "src/*/features/**/*.feature"
+
+          caches:
+            - bundler
+          script: # Modify the commands below to build your repository.
+            - git submodule update --remote --recursive --init
+            - chmod 755 ./src/COE_AUTOMATION/bitbucket_xray.sh; bash -x ./src/COE_AUTOMATION/bitbucket_xray.sh
+
+definitions:
+  caches:
+    bundler: ./vendor

@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: isupplier-ui-automation
+  description: iSupplier UI Automation
+  links:
+    - url: http://192.168.15.227:8081/
+      title: Integration Test Suite Report
+  tags:
+  - npm
+  # Example for optional annotations
+  annotations:
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: iSupplier
+  lifecycle: production
+  system: isupplier
+  subcomponentOf: isupplier-ui
+  dependsOn:
+  - component:default/isupplier-ui
